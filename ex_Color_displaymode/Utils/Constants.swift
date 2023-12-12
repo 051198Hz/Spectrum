@@ -31,7 +31,7 @@ enum Font {
 
 enum Color{
     enum Border{
-        static let Tertiary = "tertiaryBorder"
+        static let Border3 = "Border3"
     }
     enum Text{
         static let Primary = "textprimaryText"

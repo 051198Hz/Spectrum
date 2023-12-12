@@ -25,6 +25,8 @@
 		7C05A4E22B28047400744471 /* BodyMedium12_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */; };
 		7C1317A12B2876120084405D /* Button_Header_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A02B2876120084405D /* Button_Header_Item.swift */; };
 		7C1317A32B2876330084405D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A22B2876330084405D /* Constants.swift */; };
+		7C1317A52B28792B0084405D /* ChipsBasicOptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A42B28792B0084405D /* ChipsBasicOptionLabel.swift */; };
+		7C1317A72B28795B0084405D /* ChipsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A62B28795B0084405D /* ChipsLabel.swift */; };
 		7CB25B8A2AD7EA75009035F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB25B892AD7EA75009035F5 /* AppDelegate.swift */; };
 		7CB25B8C2AD7EA75009035F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB25B8B2AD7EA75009035F5 /* SceneDelegate.swift */; };
 		7CB25B8E2AD7EA75009035F5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB25B8D2AD7EA75009035F5 /* FeedVC.swift */; };
@@ -66,6 +68,8 @@
 		7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMedium12_Label.swift; sourceTree = "<group>"; };
 		7C1317A02B2876120084405D /* Button_Header_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Header_Item.swift; sourceTree = "<group>"; };
 		7C1317A22B2876330084405D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7C1317A42B28792B0084405D /* ChipsBasicOptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsBasicOptionLabel.swift; sourceTree = "<group>"; };
+		7C1317A62B28795B0084405D /* ChipsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsLabel.swift; sourceTree = "<group>"; };
 		7CB25B862AD7EA75009035F5 /* ex_Color_displaymode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ex_Color_displaymode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB25B892AD7EA75009035F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB25B8B2AD7EA75009035F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				7C05A4AF2B27DE5400744471 /* Heading_Label.swift */,
 				7C05A4C22B27F5BC00744471 /* Body16_Label.swift */,
 				7C05A4C42B27F5CF00744471 /* Body12_Label.swift */,
+				7C1317A62B28795B0084405D /* ChipsLabel.swift */,
+				7C1317A42B28792B0084405D /* ChipsBasicOptionLabel.swift */,
 				7C05A4DD2B27FFB800744471 /* ChipsFilterLabel.swift */,
 				7C05A4DF2B28045E00744471 /* BodyMedium16_Label.swift */,
 				7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */,
@@ -315,6 +321,7 @@
 				7C1317A12B2876120084405D /* Button_Header_Item.swift in Sources */,
 				7C05A4DE2B27FFB800744471 /* ChipsFilterLabel.swift in Sources */,
 				7C05A4B32B27DE7500744471 /* Label_TMB.swift in Sources */,
+				7C1317A52B28792B0084405D /* ChipsBasicOptionLabel.swift in Sources */,
 				7C05A4B52B27DEB600744471 /* Extensions.swift in Sources */,
 				7CC1E9D62AE8ACF200DA23AB /* ViewController3.swift in Sources */,
 				7C05A4BB2B27E4C200744471 /* CellFeedSpectrum.swift in Sources */,
@@ -322,6 +329,7 @@
 				7C05A4BF2B27E77C00744471 /* RoundBorderBox_TMB.swift in Sources */,
 				7C05A4E22B28047400744471 /* BodyMedium12_Label.swift in Sources */,
 				7C05A4B02B27DE5400744471 /* Heading_Label.swift in Sources */,
+				7C1317A72B28795B0084405D /* ChipsLabel.swift in Sources */,
 				7C05A4AC2B27DDA300744471 /* Header_Spacelog.swift in Sources */,
 				7CC1E9D42AE8A34100DA23AB /* ViewController2.swift in Sources */,
 				7C05A4C12B27F3E400744471 /* SlidesNumberIndicatorView.swift in Sources */,

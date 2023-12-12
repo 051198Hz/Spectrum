@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 @IBDesignable
 class Header_Spacelog: XibView {
@@ -27,10 +28,15 @@ class Header_Spacelog: XibView {
 //            NavBar.addBottomBorderWithColor(color: BorderColor!, width: 1)
         }
     }
-
+    
     override func setUI(){
         print(#function)
         if #available(iOS 13.0, *) {
+            NavBar.snp.makeConstraints {
+                $0.centerY.equalToSuperview()
+                $0.right.equalToSuperview()
+                $0.left.equalToSuperview()
+            }
             NavBar.standardAppearance.backgroundColor = .clear
             NavBar.standardAppearance.backgroundEffect = .none
             backgroundColor = .clear

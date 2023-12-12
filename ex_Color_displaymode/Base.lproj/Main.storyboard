@@ -33,8 +33,34 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROe-d9-DTu">
                                 <rect key="frame" x="0.0" y="76" width="375" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잡담" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWL-Jr-U0f" customClass="ChipsBasicOptionLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="13.5" width="29.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q&amp;A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zk-0F-Mzb" customClass="ChipsBasicOptionLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                        <rect key="frame" x="53.5" y="13.5" width="35.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-5s-15G" customClass="ChipsBasicOptionLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                        <rect key="frame" x="97" y="13.5" width="27" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="LWL-Jr-U0f" firstAttribute="leading" secondItem="ROe-d9-DTu" secondAttribute="leading" constant="16" id="BCZ-e9-B4p"/>
+                                    <constraint firstItem="LWL-Jr-U0f" firstAttribute="centerY" secondItem="ROe-d9-DTu" secondAttribute="centerY" id="IaG-xp-vaW"/>
+                                    <constraint firstItem="8Zk-0F-Mzb" firstAttribute="centerY" secondItem="ROe-d9-DTu" secondAttribute="centerY" id="KUe-Xm-J9x"/>
+                                    <constraint firstItem="8Zk-0F-Mzb" firstAttribute="leading" secondItem="LWL-Jr-U0f" secondAttribute="trailing" constant="8" id="OqQ-Rw-hl2"/>
+                                    <constraint firstItem="jf8-5s-15G" firstAttribute="centerY" secondItem="ROe-d9-DTu" secondAttribute="centerY" id="iU3-7K-MTF"/>
+                                    <constraint firstItem="jf8-5s-15G" firstAttribute="leading" secondItem="8Zk-0F-Mzb" secondAttribute="trailing" constant="8" id="orp-vV-gho"/>
                                     <constraint firstAttribute="height" constant="48" id="uAn-5g-UAb"/>
                                 </constraints>
                             </view>
@@ -70,6 +96,10 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="feedCollectionView" destination="v8w-hd-QtZ" id="rOH-BL-GOd"/>
+                        <outlet property="filter1" destination="LWL-Jr-U0f" id="aI1-he-Gv3"/>
+                        <outlet property="filter2" destination="8Zk-0F-Mzb" id="30V-Pm-w6i"/>
+                        <outlet property="filter3" destination="jf8-5s-15G" id="ViS-4M-yxG"/>
+                        <outlet property="headerBar" destination="dQS-cx-tdw" id="neK-PW-o0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4s-sH-pEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -170,6 +200,17 @@
             <point key="canvasLocation" x="343" y="-557"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="8Zk-0F-Mzb">
+            <size key="intrinsicContentSize" width="35.5" height="20.5"/>
+        </designable>
+        <designable name="LWL-Jr-U0f">
+            <size key="intrinsicContentSize" width="29.5" height="20.5"/>
+        </designable>
+        <designable name="jf8-5s-15G">
+            <size key="intrinsicContentSize" width="27" height="20.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="button_write_post" width="45" height="44"/>
         <image name="icon_feed_select" width="21" height="20"/>
@@ -187,7 +228,7 @@
             <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textprimaryText">
-            <color red="0.067000001668930054" green="0.067000001668930054" blue="0.067000001668930054" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="0.93000000715255737" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

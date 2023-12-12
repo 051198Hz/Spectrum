@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,34 +20,42 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <navigationBar contentMode="scaleToFill" translucent="NO" id="C51-tR-Pfz">
-            <rect key="frame" x="0.0" y="0.0" width="424" height="44"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-            <items>
-                <navigationItem id="crQ-il-yzW">
-                    <barButtonItem key="leftBarButtonItem" style="plain" id="07f-Fu-Fh6">
-                        <view key="customView" contentMode="scaleToFill" id="W6x-HA-fSS">
-                            <rect key="frame" x="20" y="5.6666666666666679" width="87" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text_Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-R8-YGU" customClass="Heading_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="4.6666666666666679" width="117" height="24"/>
-                                    <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="20"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="Fim-R8-YGU" firstAttribute="leading" secondItem="W6x-HA-fSS" secondAttribute="leading" id="KDf-BK-OV9"/>
-                                <constraint firstItem="Fim-R8-YGU" firstAttribute="centerY" secondItem="W6x-HA-fSS" secondAttribute="centerY" id="UbB-no-wP8"/>
-                            </constraints>
-                        </view>
-                    </barButtonItem>
-                </navigationItem>
-            </items>
-            <navigationBarAppearance key="scrollEdgeAppearance"/>
-            <point key="canvasLocation" x="163.35877862595419" y="-23.239436619718312"/>
-        </navigationBar>
+        <view contentMode="scaleToFill" id="9zs-Qa-gnK">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" id="C51-tR-Pfz">
+                    <rect key="frame" x="-9" y="75" width="369" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem id="crQ-il-yzW">
+                            <barButtonItem key="leftBarButtonItem" style="plain" id="07f-Fu-Fh6">
+                                <view key="customView" contentMode="scaleToFill" id="W6x-HA-fSS">
+                                    <rect key="frame" x="16" y="5.6666666666666679" width="87" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text_Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-R8-YGU" customClass="Heading_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="4.6666666666666679" width="117" height="24"/>
+                                            <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Fim-R8-YGU" firstAttribute="leading" secondItem="W6x-HA-fSS" secondAttribute="leading" id="KDf-BK-OV9"/>
+                                        <constraint firstItem="Fim-R8-YGU" firstAttribute="centerY" secondItem="W6x-HA-fSS" secondAttribute="centerY" id="UbB-no-wP8"/>
+                                    </constraints>
+                                </view>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                    <navigationBarAppearance key="scrollEdgeAppearance"/>
+                </navigationBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vsd-OC-ZXb"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-116.03053435114504" y="3.8732394366197185"/>
+        </view>
     </objects>
     <designables>
         <designable name="Fim-R8-YGU">

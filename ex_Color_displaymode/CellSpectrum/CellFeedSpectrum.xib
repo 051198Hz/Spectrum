@@ -35,14 +35,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I4k-1l-hWj">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="20.333333333333332"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="잡담" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GL-Zj-0a1" customClass="ChipsFilterLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="29.666666666666668" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="체포·구속·압수 또는 수색을 할 때에는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-jm-GIz" customClass="BodyMedium16_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                                <rect key="frame" x="37.666666666666657" y="0.0" width="289.33333333333337" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -239,9 +233,6 @@
         </collectionViewCell>
     </objects>
     <designables>
-        <designable name="7GL-Zj-0a1">
-            <size key="intrinsicContentSize" width="29.666666666666668" height="20.333333333333332"/>
-        </designable>
         <designable name="TBz-Nw-cUb">
             <size key="intrinsicContentSize" width="44.333333333333336" height="20.333333333333332"/>
         </designable>
@@ -262,6 +253,12 @@
         </designable>
         <designable name="qFl-vA-S7B">
             <size key="intrinsicContentSize" width="49.666666666666664" height="20.333333333333332"/>
+        </designable>
+        <designable name="qU3-K7-QzY">
+            <size key="intrinsicContentSize" width="101" height="20.333333333333332"/>
+        </designable>
+        <designable name="xTW-OZ-4LR">
+            <size key="intrinsicContentSize" width="58.333333333333336" height="20.333333333333332"/>
         </designable>
     </designables>
     <resources>

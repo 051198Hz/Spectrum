@@ -8,6 +8,13 @@
 import UIKit
 
 class FeedVC: UIViewController{
+    
+    @IBOutlet weak var headerBar: Header_Spacelog!
+    
+    @IBOutlet weak var filter1: ChipsBasicOptionLabel!
+    @IBOutlet weak var filter2: ChipsBasicOptionLabel!
+    @IBOutlet weak var filter3: ChipsBasicOptionLabel!
+    
     @IBOutlet weak var feedCollectionView: UICollectionView!
     lazy var posts : [String] = []
     
@@ -17,11 +24,28 @@ class FeedVC: UIViewController{
         feedCollectionView.dataSource = self
         registerNib()
         (feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = .zero
+        addBarButton()
+        setFilter()
     }
     
     private func registerNib() {
         let nibName = UINib(nibName: "CellFeedSpectrum", bundle: nil)
         feedCollectionView.register(nibName, forCellWithReuseIdentifier: "CellFeedSpectrum")
+    }
+    
+    func addBarButton(){
+        let item_button_search = createBarButtonItem(CGRect(x: 0, y: 0, width: 24, height: 24), Constants.Assetname.Images.Symbol.Notification) {
+            print(#function)
+        }
+        headerBar.NavBar.topItem?.setRightBarButtonItems([ item_button_search], animated: true)
+    }
+    
+    func createBarButtonItem(_ frame : CGRect, _ image : String, _ action : @escaping ()->() ) -> UIBarButtonItem {
+        let button = Button_Header_Item(frame: frame, image: UIImage(named: image), title: nil)
+        button.addAction {
+            action()
+        }
+        return UIBarButtonItem(customView: button )
     }
 
 }
@@ -41,9 +65,20 @@ extension FeedVC: UICollectionViewDelegate, UICollectionViewDataSource{
         
         return cell
     }
+    
+    func setFilter(){
+        filter1.onoff = true
+        filter2.onoff = false
+        filter3.onoff = false
+    }
 }
 
 extension FeedVC: UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0)
+        return sectionInsets
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1
@@ -51,10 +86,6 @@ extension FeedVC: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        var margin: CGFloat = 0.0
-        if indexPath.row == 10 {
-            margin = 16
-        }
         return CGSize(width: collectionView.frame.width, height: 448)
         
     }
