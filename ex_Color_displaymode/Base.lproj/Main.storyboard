@@ -35,19 +35,19 @@
                                 <rect key="frame" x="0.0" y="76" width="375" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잡담" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWL-Jr-U0f" customClass="ChipsBasicOptionLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="13.5" width="29.5" height="21"/>
+                                        <rect key="frame" x="16" y="10" width="61.5" height="28.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q&amp;A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zk-0F-Mzb" customClass="ChipsBasicOptionLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                        <rect key="frame" x="53.5" y="13.5" width="35.5" height="21"/>
+                                        <rect key="frame" x="85.5" y="10" width="67.5" height="28.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A/B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf8-5s-15G" customClass="ChipsBasicOptionLabel" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                        <rect key="frame" x="97" y="13.5" width="27" height="21"/>
+                                        <rect key="frame" x="161" y="10" width="59" height="28.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -202,13 +202,13 @@
     </scenes>
     <designables>
         <designable name="8Zk-0F-Mzb">
-            <size key="intrinsicContentSize" width="35.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="67.5" height="28.5"/>
         </designable>
         <designable name="LWL-Jr-U0f">
-            <size key="intrinsicContentSize" width="29.5" height="20.5"/>
+            <size key="intrinsicContentSize" width="61.5" height="28.5"/>
         </designable>
         <designable name="jf8-5s-15G">
-            <size key="intrinsicContentSize" width="27" height="20.5"/>
+            <size key="intrinsicContentSize" width="59" height="28.5"/>
         </designable>
     </designables>
     <resources>
