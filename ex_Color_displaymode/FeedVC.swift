@@ -17,13 +17,13 @@ class FeedVC: UIViewController{
         feedCollectionView.dataSource = self
         registerNib()
         (feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = .zero
-        
     }
     
     private func registerNib() {
         let nibName = UINib(nibName: "CellFeedSpectrum", bundle: nil)
         feedCollectionView.register(nibName, forCellWithReuseIdentifier: "CellFeedSpectrum")
     }
+
 }
 
 extension FeedVC: UICollectionViewDelegate, UICollectionViewDataSource{
