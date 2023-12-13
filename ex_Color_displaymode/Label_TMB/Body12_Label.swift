@@ -16,6 +16,8 @@ class Body12_Label: Label_TMB {
         font = _font
         letter_spacing = -0.2
         pxLineHeight = 20
+        adjustsFontSizeToFitWidth = false;
+        lineBreakMode = .byTruncatingTail;
     }
     
     @IBInspectable public var font_size : CGFloat = 12

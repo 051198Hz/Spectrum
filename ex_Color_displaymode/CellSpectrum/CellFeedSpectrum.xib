@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4k-Vs-OUn" customClass="RoundBorderBox_TMB" customModule="ex_Color_displaymode" customModuleProvider="target">
                         <rect key="frame" x="8" y="16" width="359" height="384"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samplePostImage" translatesAutoresizingMaskIntoConstraints="NO" id="SOs-zX-ft5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SOs-zX-ft5">
                                 <rect key="frame" x="0.0" y="0.0" width="359" height="180"/>
                                 <color key="backgroundColor" name="textprimaryText"/>
                                 <constraints>
@@ -32,17 +32,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOQ-cO-MGs">
                                 <rect key="frame" x="16" y="196" width="327" height="128"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I4k-1l-hWj">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="20.333333333333332"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="체포·구속·압수 또는 수색을 할 때에는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-jm-GIz" customClass="BodyMedium16_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="327" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="체포·구속·압수 또는 수색을 할 때에는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHM-jm-GIz" customClass="BodyMedium16_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="247.33333333333334" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXZ-Tb-7TB" customClass="Body12_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28.333333333333343" width="327" height="40"/>
                                         <constraints>
@@ -88,14 +83,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="3Cx-ED-WuP"/>
+                                    <constraint firstItem="nHM-jm-GIz" firstAttribute="leading" secondItem="OOQ-cO-MGs" secondAttribute="leading" id="8UT-LW-HLx"/>
                                     <constraint firstItem="dcU-ZX-pXZ" firstAttribute="leading" secondItem="OOQ-cO-MGs" secondAttribute="leading" id="FOW-YS-X6K"/>
                                     <constraint firstAttribute="trailing" secondItem="ZXZ-Tb-7TB" secondAttribute="trailing" id="FmZ-X3-8P1"/>
-                                    <constraint firstItem="I4k-1l-hWj" firstAttribute="top" secondItem="OOQ-cO-MGs" secondAttribute="top" id="HYI-jc-87h"/>
-                                    <constraint firstItem="I4k-1l-hWj" firstAttribute="leading" secondItem="OOQ-cO-MGs" secondAttribute="leading" id="JCN-Fq-eyR"/>
+                                    <constraint firstItem="nHM-jm-GIz" firstAttribute="top" secondItem="OOQ-cO-MGs" secondAttribute="top" id="JA3-9A-8oi"/>
                                     <constraint firstItem="ZXZ-Tb-7TB" firstAttribute="leading" secondItem="OOQ-cO-MGs" secondAttribute="leading" id="KXb-Mj-eys"/>
+                                    <constraint firstItem="ZXZ-Tb-7TB" firstAttribute="top" secondItem="nHM-jm-GIz" secondAttribute="bottom" constant="8" id="dI1-NS-TE9"/>
                                     <constraint firstItem="dcU-ZX-pXZ" firstAttribute="top" secondItem="ZXZ-Tb-7TB" secondAttribute="bottom" constant="8" id="gpi-no-fca"/>
-                                    <constraint firstItem="ZXZ-Tb-7TB" firstAttribute="top" secondItem="I4k-1l-hWj" secondAttribute="bottom" constant="8" id="i2d-7N-cZf"/>
-                                    <constraint firstAttribute="trailing" secondItem="I4k-1l-hWj" secondAttribute="trailing" id="lNb-OS-UEF"/>
                                     <constraint firstItem="HfB-TV-xBi" firstAttribute="leading" secondItem="OOQ-cO-MGs" secondAttribute="leading" id="qg1-hh-Dp5"/>
                                     <constraint firstItem="HfB-TV-xBi" firstAttribute="top" secondItem="dcU-ZX-pXZ" secondAttribute="bottom" constant="8" id="vFC-fi-LDc"/>
                                 </constraints>
@@ -262,7 +256,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="samplePostImage" width="1077" height="540"/>
         <image name="sampleProfileImage" width="28" height="28"/>
         <namedColor name="secondaryFill">
             <color red="0.14509803921568629" green="0.14509803921568629" blue="0.14901960784313725" alpha="0.74000000953674316" colorSpace="custom" customColorSpace="sRGB"/>

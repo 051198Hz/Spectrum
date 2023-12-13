@@ -5,30 +5,24 @@
 //  Created by iOS Dev on 2023/12/12.
 //
 
+
+
+
 import UIKit
 
-class ChipsLabel: Label_TMB{
-    
-    private var _onoff:Bool = false
-    
-    var onoff: Bool{
-        set{
-            if newValue{
-                textColor = UIColor(named: "invertedText")
-                backgroundColor = UIColor(named: "PrimaryFill")
-                layer.borderWidth = 0
-            }else{
-                textColor = UIColor(named: Constants.Assetname.Colors.Text.Secondary)
-                backgroundColor = .white
-                layer.borderWidth = 1
-                layer.borderColor = UIColor(named: Constants.Assetname.Colors.Border.Border3)?.cgColor
-            }
-            _onoff = newValue
-        }
-        get{
-            return _onoff
-        }
+class ChipsLabel: Label_TMB, Switchable{
+        
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        alpha = 0.3
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        alpha = 1.0
+    }
+    
+    public var font_size : CGFloat? = 12
+
+    var onoff: Bool = false
     
     @IBInspectable var topInset: CGFloat = 2.0
     @IBInspectable var bottomInset: CGFloat = 2.0
@@ -75,6 +69,18 @@ class ChipsLabel: Label_TMB{
         }
     }
     
-
-    public var font_size : CGFloat? = 12
+    func setOn(){
+        textColor = UIColor(named: "invertedText")
+        backgroundColor = UIColor(named: "PrimaryFill")
+        layer.borderWidth = 0
+        onoff = true
+    }
+    
+    func setOff(){
+        textColor = UIColor(named: Constants.Assetname.Colors.Text.Secondary)
+        backgroundColor = .white
+        layer.borderWidth = 1
+        layer.borderColor = UIColor(named: Constants.Assetname.Colors.Border.Border3)?.cgColor
+        onoff = false
+    }
 }

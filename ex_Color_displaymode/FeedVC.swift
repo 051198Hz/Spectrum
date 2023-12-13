@@ -15,6 +15,8 @@ class FeedVC: UIViewController{
     @IBOutlet weak var filter2: ChipsBasicOptionLabel!
     @IBOutlet weak var filter3: ChipsBasicOptionLabel!
     
+    var filterGroup: RadioGroupingController!
+    
     @IBOutlet weak var feedCollectionView: UICollectionView!
     lazy var posts : [String] = []
     
@@ -26,6 +28,12 @@ class FeedVC: UIViewController{
         (feedCollectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = .zero
         addBarButton()
         setFilter()
+        setGroup()
+    }
+    
+    func setGroup(){
+        let filters:[Switchable] = [filter1, filter2, filter3]
+        filterGroup = RadioGroupingController(filters)
     }
     
     private func registerNib() {
@@ -67,9 +75,9 @@ extension FeedVC: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func setFilter(){
-        filter1.onoff = true
-        filter2.onoff = false
-        filter3.onoff = false
+        filter1.setOn()
+        filter2.setOff()
+        filter3.setOff()
     }
 }
 
