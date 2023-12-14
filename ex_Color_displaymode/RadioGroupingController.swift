@@ -5,7 +5,6 @@
 //  Created by iOS Dev on 2023/12/13.
 //
 
-import Foundation
 import UIKit
 
 protocol Switchable{
@@ -47,15 +46,16 @@ class RadioGroupingController{
     }
     
     @objc private func didSeletedComponents(_ sender: UITapGestureRecognizer) {
+        
         for index in array.indices {
             guard let item = array[index] as? UIView else {return}
             if item != sender.view{
                 array[index].setOff()
             }
         }
+        
         guard let item = sender.view as? Switchable else {return}
         item.setOn()
 
     }
-    
 }

@@ -9,12 +9,25 @@ import UIKit
 
 class RoundBorderBox_TMB: UIView{
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.layer.borderColor = UIColor(named: "border2")!.cgColor
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 16
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        print(#function)
         self.layer.borderColor = UIColor(named: "border2")!.cgColor
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 16
         // Initialization code
     }
+    
     
 }

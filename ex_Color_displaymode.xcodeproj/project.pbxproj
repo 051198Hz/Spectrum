@@ -23,7 +23,9 @@
 		7C05A4DE2B27FFB800744471 /* ChipsFilterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4DD2B27FFB800744471 /* ChipsFilterLabel.swift */; };
 		7C05A4E02B28045E00744471 /* BodyMedium16_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4DF2B28045E00744471 /* BodyMedium16_Label.swift */; };
 		7C05A4E22B28047400744471 /* BodyMedium12_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */; };
-		7C08D5B82B2933F300929DF0 /* ComponentsGroupingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5B72B2933F300929DF0 /* ComponentsGroupingManager.swift */; };
+		7C08D5B82B2933F300929DF0 /* RadioGroupingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5B72B2933F300929DF0 /* RadioGroupingController.swift */; };
+		7C08D5BA2B2B127200929DF0 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5B92B2B127200929DF0 /* DropDownView.swift */; };
+		7C08D5BD2B2B137900929DF0 /* Body14_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5BC2B2B137900929DF0 /* Body14_Label.swift */; };
 		7C1317A12B2876120084405D /* Button_Header_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A02B2876120084405D /* Button_Header_Item.swift */; };
 		7C1317A32B2876330084405D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A22B2876330084405D /* Constants.swift */; };
 		7C1317A52B28792B0084405D /* ChipsBasicOptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A42B28792B0084405D /* ChipsBasicOptionLabel.swift */; };
@@ -67,7 +69,9 @@
 		7C05A4DD2B27FFB800744471 /* ChipsFilterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsFilterLabel.swift; sourceTree = "<group>"; };
 		7C05A4DF2B28045E00744471 /* BodyMedium16_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMedium16_Label.swift; sourceTree = "<group>"; };
 		7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMedium12_Label.swift; sourceTree = "<group>"; };
-		7C08D5B72B2933F300929DF0 /* ComponentsGroupingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsGroupingManager.swift; sourceTree = "<group>"; };
+		7C08D5B72B2933F300929DF0 /* RadioGroupingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroupingController.swift; sourceTree = "<group>"; };
+		7C08D5B92B2B127200929DF0 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		7C08D5BC2B2B137900929DF0 /* Body14_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body14_Label.swift; sourceTree = "<group>"; };
 		7C1317A02B2876120084405D /* Button_Header_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Header_Item.swift; sourceTree = "<group>"; };
 		7C1317A22B2876330084405D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7C1317A42B28792B0084405D /* ChipsBasicOptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsBasicOptionLabel.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				7C05A4AF2B27DE5400744471 /* Heading_Label.swift */,
 				7C05A4C22B27F5BC00744471 /* Body16_Label.swift */,
 				7C05A4C42B27F5CF00744471 /* Body12_Label.swift */,
+				7C08D5BC2B2B137900929DF0 /* Body14_Label.swift */,
 				7C05A4DF2B28045E00744471 /* BodyMedium16_Label.swift */,
 				7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */,
 			);
@@ -169,6 +174,14 @@
 			path = HeaderItem_TMB;
 			sourceTree = "<group>";
 		};
+		7C08D5BB2B2B127900929DF0 /* Dropdown_TMB */ = {
+			isa = PBXGroup;
+			children = (
+				7C08D5B92B2B127200929DF0 /* DropDownView.swift */,
+			);
+			path = Dropdown_TMB;
+			sourceTree = "<group>";
+		};
 		7CB25B7D2AD7EA74009035F5 = {
 			isa = PBXGroup;
 			children = (
@@ -204,8 +217,9 @@
 				7C08D5B52B29309D00929DF0 /* Chips_TMB */,
 				7C05A4B12B27DE6100744471 /* Label_TMB */,
 				7C05A4AA2B27DD9C00744471 /* Header_TMB */,
+				7C08D5BB2B2B127900929DF0 /* Dropdown_TMB */,
 				7CB25B8F2AD7EA75009035F5 /* Main.storyboard */,
-				7C08D5B72B2933F300929DF0 /* ComponentsGroupingManager.swift */,
+				7C08D5B72B2933F300929DF0 /* RadioGroupingController.swift */,
 				7CB25B922AD7EA76009035F5 /* Assets.xcassets */,
 				7CB25B942AD7EA76009035F5 /* LaunchScreen.storyboard */,
 				7CB25B972AD7EA76009035F5 /* Info.plist */,
@@ -331,11 +345,12 @@
 				7C05A4AE2B27DDAF00744471 /* XibView.swift in Sources */,
 				7CC1E9D22AE89EBE00DA23AB /* register_name_vc.swift in Sources */,
 				7CB25B9E2AD7F6B8009035F5 /* label_ex.swift in Sources */,
-				7C08D5B82B2933F300929DF0 /* ComponentsGroupingManager.swift in Sources */,
+				7C08D5B82B2933F300929DF0 /* RadioGroupingController.swift in Sources */,
 				7CB25B8A2AD7EA75009035F5 /* AppDelegate.swift in Sources */,
 				7C05A4E02B28045E00744471 /* BodyMedium16_Label.swift in Sources */,
 				7C1317A32B2876330084405D /* Constants.swift in Sources */,
 				7CC1E9D82AE8AE5500DA23AB /* navVC.swift in Sources */,
+				7C08D5BD2B2B137900929DF0 /* Body14_Label.swift in Sources */,
 				7CB25B8C2AD7EA75009035F5 /* SceneDelegate.swift in Sources */,
 				7C05A4C52B27F5CF00744471 /* Body12_Label.swift in Sources */,
 				7C1317A12B2876120084405D /* Button_Header_Item.swift in Sources */,
@@ -343,6 +358,7 @@
 				7C05A4B32B27DE7500744471 /* Label_TMB.swift in Sources */,
 				7C1317A52B28792B0084405D /* ChipsBasicOptionLabel.swift in Sources */,
 				7C05A4B52B27DEB600744471 /* Extensions.swift in Sources */,
+				7C08D5BA2B2B127200929DF0 /* DropDownView.swift in Sources */,
 				7CC1E9D62AE8ACF200DA23AB /* ViewController3.swift in Sources */,
 				7C05A4BB2B27E4C200744471 /* CellFeedSpectrum.swift in Sources */,
 				7C05A4C32B27F5BC00744471 /* Body16_Label.swift in Sources */,

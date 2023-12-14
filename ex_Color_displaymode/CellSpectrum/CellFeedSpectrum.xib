@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4k-Vs-OUn" customClass="RoundBorderBox_TMB" customModule="ex_Color_displaymode" customModuleProvider="target">
                         <rect key="frame" x="8" y="16" width="359" height="384"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SOs-zX-ft5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="samplePostImage" translatesAutoresizingMaskIntoConstraints="NO" id="SOs-zX-ft5">
                                 <rect key="frame" x="0.0" y="0.0" width="359" height="180"/>
                                 <color key="backgroundColor" name="textprimaryText"/>
                                 <constraints>
@@ -167,33 +167,99 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDS-ls-cVv" customClass="RoundBorderBox_TMB" customModule="ex_Color_displaymode" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qVu-Eb-4sc">
+                                        <rect key="frame" x="15.666666666666671" y="10" width="39" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Symbol_heart" translatesAutoresizingMaskIntoConstraints="NO" id="aql-dp-TcY">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="0NN-wf-i2G"/>
+                                                    <constraint firstAttribute="width" constant="20" id="jEy-nr-w6V"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24v-sd-n2W" customClass="Body16_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                                <rect key="frame" x="23.999999999999986" y="0.0" width="15" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="qVu-Eb-4sc" firstAttribute="centerX" secondItem="IDS-ls-cVv" secondAttribute="centerX" id="Pgd-lD-QTy"/>
                                     <constraint firstAttribute="height" constant="40" id="YOy-7R-AV6"/>
                                     <constraint firstAttribute="width" constant="70" id="p7P-zX-Ozd"/>
+                                    <constraint firstItem="qVu-Eb-4sc" firstAttribute="centerY" secondItem="IDS-ls-cVv" secondAttribute="centerY" id="qth-Yp-bwf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XA-uw-8jw" customClass="RoundBorderBox_TMB" customModule="ex_Color_displaymode" customModuleProvider="target">
                                 <rect key="frame" x="78" y="0.0" width="66" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="45b-2a-H8H">
+                                        <rect key="frame" x="13.666666666666657" y="10" width="39" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Symbol_comment" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-D4-9Ij">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="28l-nE-9we"/>
+                                                    <constraint firstAttribute="height" constant="20" id="yNH-ts-T3f"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRs-0j-VAJ" customClass="Body16_Label" customModule="ex_Color_displaymode" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="0.0" width="15" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="45b-2a-H8H" firstAttribute="centerX" secondItem="2XA-uw-8jw" secondAttribute="centerX" id="A1Z-p4-MmX"/>
                                     <constraint firstAttribute="height" constant="40" id="SOj-Yl-Pot"/>
+                                    <constraint firstItem="45b-2a-H8H" firstAttribute="centerY" secondItem="2XA-uw-8jw" secondAttribute="centerY" id="kpJ-UE-Y9u"/>
                                     <constraint firstAttribute="width" constant="66" id="q7N-qi-vib"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-s3-VEO" customClass="RoundBorderBox_TMB" customModule="ex_Color_displaymode" customModuleProvider="target">
                                 <rect key="frame" x="152" y="0.0" width="52" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Symbol_archive" translatesAutoresizingMaskIntoConstraints="NO" id="F3b-3U-Hws">
+                                        <rect key="frame" x="16" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="9pf-D0-FpM"/>
+                                            <constraint firstAttribute="height" constant="20" id="wQb-fs-xUs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="F3b-3U-Hws" firstAttribute="centerX" secondItem="ufo-s3-VEO" secondAttribute="centerX" id="7c6-wC-sBb"/>
                                     <constraint firstAttribute="height" constant="40" id="dlx-0x-0LG"/>
                                     <constraint firstAttribute="width" constant="52" id="q3k-Mo-r8j"/>
+                                    <constraint firstItem="F3b-3U-Hws" firstAttribute="centerY" secondItem="ufo-s3-VEO" secondAttribute="centerY" id="xHZ-Gs-mb9"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HP0-gv-Pgz" customClass="RoundBorderBox_TMB" customModule="ex_Color_displaymode" customModuleProvider="target">
                                 <rect key="frame" x="212" y="0.0" width="52" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Symbol_more" translatesAutoresizingMaskIntoConstraints="NO" id="TpZ-JW-DA3">
+                                        <rect key="frame" x="16" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="fMB-ve-JIN"/>
+                                            <constraint firstAttribute="height" constant="20" id="gme-8W-zpC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="TpZ-JW-DA3" firstAttribute="centerX" secondItem="HP0-gv-Pgz" secondAttribute="centerX" id="5Rf-tC-KUG"/>
                                     <constraint firstAttribute="width" constant="52" id="AuS-xQ-koE"/>
+                                    <constraint firstItem="TpZ-JW-DA3" firstAttribute="centerY" secondItem="HP0-gv-Pgz" secondAttribute="centerY" id="Zxh-fk-fIH"/>
                                     <constraint firstAttribute="height" constant="40" id="iKw-Qn-9Jg"/>
                                 </constraints>
                             </view>
@@ -214,7 +280,9 @@
                 <outlet property="agoText" destination="xTW-OZ-4LR" id="boi-IW-j68"/>
                 <outlet property="bodyText" destination="ZXZ-Tb-7TB" id="vaQ-AY-zxw"/>
                 <outlet property="box_post" destination="S4k-Vs-OUn" id="fOY-wZ-f9D"/>
+                <outlet property="commentText" destination="fRs-0j-VAJ" id="fO5-0c-jeV"/>
                 <outlet property="image_profile" destination="ddp-DP-QgN" id="QP4-aT-RmT"/>
+                <outlet property="likeText" destination="24v-sd-n2W" id="P5W-V2-FLc"/>
                 <outlet property="showMoreText" destination="dcU-ZX-pXZ" id="YWb-Rg-iXn"/>
                 <outlet property="tag1TextLabel" destination="nsp-6B-2Wk" id="FRy-le-psE"/>
                 <outlet property="tag2TextLabel" destination="qFl-vA-S7B" id="8mX-xB-sTL"/>
@@ -227,6 +295,9 @@
         </collectionViewCell>
     </objects>
     <designables>
+        <designable name="24v-sd-n2W">
+            <size key="intrinsicContentSize" width="15" height="20.333333333333332"/>
+        </designable>
         <designable name="TBz-Nw-cUb">
             <size key="intrinsicContentSize" width="44.333333333333336" height="20.333333333333332"/>
         </designable>
@@ -235,6 +306,9 @@
         </designable>
         <designable name="dcU-ZX-pXZ">
             <size key="intrinsicContentSize" width="48.666666666666664" height="20.333333333333332"/>
+        </designable>
+        <designable name="fRs-0j-VAJ">
+            <size key="intrinsicContentSize" width="15" height="20.333333333333332"/>
         </designable>
         <designable name="lLr-ry-7t8">
             <size key="intrinsicContentSize" width="50" height="20.333333333333332"/>
@@ -256,6 +330,11 @@
         </designable>
     </designables>
     <resources>
+        <image name="Symbol_archive" width="20" height="20"/>
+        <image name="Symbol_comment" width="20" height="20"/>
+        <image name="Symbol_heart" width="20" height="20"/>
+        <image name="Symbol_more" width="20" height="20"/>
+        <image name="samplePostImage" width="718" height="508"/>
         <image name="sampleProfileImage" width="28" height="28"/>
         <namedColor name="secondaryFill">
             <color red="0.14509803921568629" green="0.14509803921568629" blue="0.14901960784313725" alpha="0.74000000953674316" colorSpace="custom" customColorSpace="sRGB"/>

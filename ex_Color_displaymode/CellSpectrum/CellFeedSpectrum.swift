@@ -24,6 +24,9 @@ class CellFeedSpectrum: UICollectionViewCell {
     @IBOutlet weak var userHandleNameText: Body12_Label!
     @IBOutlet weak var agoText: Body12_Label!
     
+    @IBOutlet weak var likeText: Body16_Label!
+    @IBOutlet weak var commentText: Body16_Label!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         box_post.layer.masksToBounds = true
@@ -39,6 +42,9 @@ class CellFeedSpectrum: UICollectionViewCell {
         userNameText.textColor = UIColor(named: "textprimaryText")
         userHandleNameText.textColor = UIColor(named: "SecondaryText")
         agoText.textColor = UIColor(named: "TertiaryText")
+        
+        commentText.textColor = UIColor(named: "TertiaryText")
+        likeText.textColor = UIColor(named: "TertiaryText")
         
 //        image_profile.layer.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 1, b: 0, c: 0, d: 1.31, tx: 0, ty: -0.16))
 

@@ -58,7 +58,7 @@ enum Image{
     enum Symbol{
         static let ArrowBack = "Symbol_arrow_back"
         static let Notification = "Symbol_notifications"
-
+        static let DropDown = "Symbol_arrow_dropDown"
     }
 
 }
