@@ -9,23 +9,20 @@ final class DropDownMenu: UIView {
     
     lazy var textView: RoundBorderBox_TMB = {
         
+        //init에서 할당시 뷰 위계 버그 있음
         absolutFrame = view.convert(view.bounds, to: screen)
-
         
         let textView = RoundBorderBox_TMB(frame: CGRect(x: 0 , y: absolutFrame.maxY + 8, width: 84, height: 1))
         
-        textView.translatesAutoresizingMaskIntoConstraints = false
-
-        textView.layer.cornerRadius = 8
+        //애니메이션 최초 실행시 좌측에서 날아오는 버그 방지 코드
+        textView.center.x = absolutFrame.midX
         
+        textView.layer.cornerRadius = 8
         textView.backgroundColor = .white
-
-        heightConst = textView.heightAnchor.constraint(equalToConstant: 0)
+        
         
         return textView
     }()
-    
-    var heightConst:NSLayoutConstraint!
     
     lazy var titleText: Body14_Label = {
         let label = Body14_Label(frame: CGRect(x: 0, y: 0, width: 36, height: 24))
@@ -50,14 +47,6 @@ final class DropDownMenu: UIView {
     init(frame: CGRect, screen: UIView){
         super.init(frame: frame)
         self.screen = screen
-        setUI()
-        setConstraints()
-        
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame) //68 * 32
-//        backgroundColor = .black
         setUI()
         setConstraints()
     }
@@ -95,18 +84,12 @@ final class DropDownMenu: UIView {
                 screen.addSubview(textView)
             }
             
-            let frame = view.convert(view.bounds, to: screen)
-            
-            textView.center.x = frame.midX
-            
-            NSLayoutConstraint.activate([
-                textView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                textView.widthAnchor.constraint(equalToConstant: 84),
-                textView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: 8)
-            ])
-                        
-            heightConst.constant = 80
-            heightConst.isActive = true
+            textView.snp.updateConstraints({
+                $0.centerX.equalTo(view.snp.centerX)
+                $0.top.equalTo(view.snp.bottom).offset(8)
+                $0.width.equalTo(84)
+                $0.height.equalTo(80)
+            })
             
             view.backgroundColor = UIColor(named: Constants.Assetname.Colors.Background.bg2)
             
@@ -118,13 +101,12 @@ final class DropDownMenu: UIView {
         
         view.backgroundColor = .white
         
-        
-        heightConst.constant = 0
-        heightConst.isActive = true
+        textView.snp.updateConstraints({
+            $0.height.equalTo(0)
+        })
         
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: screen!.layoutIfNeeded)
         
-//        textView.removeFromSuperview()
         isSeleted = false
     }
 }
