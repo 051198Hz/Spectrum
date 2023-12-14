@@ -22,7 +22,6 @@ class RoundBorderBox_TMB: UIView{
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        print(#function)
         self.layer.borderColor = UIColor(named: "border2")!.cgColor
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 16

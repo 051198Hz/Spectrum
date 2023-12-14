@@ -44,7 +44,6 @@ class FeedVC: UIViewController{
     
     func addRightBarButton(){
         let item_button_search = createBarButtonItem(CGRect(x: 0, y: 0, width: 24, height: 24), Constants.Assetname.Images.Symbol.Notification) {
-            print(#function)
         }
         headerBar.NavBar.topItem?.setRightBarButtonItems([ item_button_search], animated: true)
     }
@@ -76,7 +75,7 @@ class FeedVC: UIViewController{
     }
     
     func createBarDropDownItem(_ frame : CGRect ) -> UIBarButtonItem {
-        let dropDownMenu = DropDownView(frame: frame, screen: view)
+        let dropDownMenu = DropDownMenu(frame: frame, screen: view)
 
         return UIBarButtonItem(customView: dropDownMenu )
     }

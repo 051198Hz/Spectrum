@@ -33,7 +33,6 @@ class XibView: UIView {
     }
     
     func setUI(){
-        print(#function)
     }
     
 }

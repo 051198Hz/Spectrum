@@ -30,7 +30,6 @@ class Header_Spacelog: XibView {
     }
     
     override func setUI(){
-        print(#function)
         if #available(iOS 13.0, *) {
             NavBar.snp.makeConstraints {
                 $0.centerY.equalToSuperview()
