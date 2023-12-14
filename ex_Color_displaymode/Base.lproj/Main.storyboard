@@ -13,7 +13,7 @@
         <!--피드-->
         <scene sceneID="uan-Ld-KNe">
             <objects>
-                <viewController storyboardIdentifier="1" id="R4r-iv-TT0" customClass="FeedVC" customModule="ex_Color_displaymode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R4r-iv-TT0" customClass="FeedVC" customModule="ex_Color_displaymode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="quO-Qo-V6H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="LUr-6x-v0i">
             <objects>
-                <tabBarController id="T4L-89-pdX" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T4L-89-pdX" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aRU-hI-0ZH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
