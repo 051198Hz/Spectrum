@@ -23,8 +23,6 @@
 		7C05A4DE2B27FFB800744471 /* ChipsFilterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4DD2B27FFB800744471 /* ChipsFilterLabel.swift */; };
 		7C05A4E02B28045E00744471 /* BodyMedium16_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4DF2B28045E00744471 /* BodyMedium16_Label.swift */; };
 		7C05A4E22B28047400744471 /* BodyMedium12_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */; };
-		7C08D5B82B2933F300929DF0 /* RadioGroupingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5B72B2933F300929DF0 /* RadioGroupingController.swift */; };
-		7C08D5BA2B2B127200929DF0 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5B92B2B127200929DF0 /* DropDownView.swift */; };
 		7C08D5BD2B2B137900929DF0 /* Body14_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C08D5BC2B2B137900929DF0 /* Body14_Label.swift */; };
 		7C1317A12B2876120084405D /* Button_Header_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A02B2876120084405D /* Button_Header_Item.swift */; };
 		7C1317A32B2876330084405D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1317A22B2876330084405D /* Constants.swift */; };
@@ -47,6 +45,8 @@
 		7CB25BB22AD7F6F9009035F5 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB25BA82AD7F6F9009035F5 /* Pretendard-Thin.otf */; };
 		7CB25BB32AD7F6F9009035F5 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB25BA92AD7F6F9009035F5 /* Pretendard-ExtraLight.otf */; };
 		7CB25BB42AD7F6F9009035F5 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CB25BAA2AD7F6F9009035F5 /* Pretendard-SemiBold.otf */; };
+		7CBC59E82B2B64AD00206280 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC59E72B2B64AD00206280 /* DropDownMenu.swift */; };
+		7CBC59EB2B2B64BE00206280 /* RadioGroupingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC59EA2B2B64BE00206280 /* RadioGroupingController.swift */; };
 		7CC1E9D22AE89EBE00DA23AB /* register_name_vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1E9D12AE89EBE00DA23AB /* register_name_vc.swift */; };
 		7CC1E9D42AE8A34100DA23AB /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1E9D32AE8A34100DA23AB /* ViewController2.swift */; };
 		7CC1E9D62AE8ACF200DA23AB /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC1E9D52AE8ACF200DA23AB /* ViewController3.swift */; };
@@ -69,8 +69,6 @@
 		7C05A4DD2B27FFB800744471 /* ChipsFilterLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsFilterLabel.swift; sourceTree = "<group>"; };
 		7C05A4DF2B28045E00744471 /* BodyMedium16_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMedium16_Label.swift; sourceTree = "<group>"; };
 		7C05A4E12B28047400744471 /* BodyMedium12_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMedium12_Label.swift; sourceTree = "<group>"; };
-		7C08D5B72B2933F300929DF0 /* RadioGroupingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioGroupingController.swift; sourceTree = "<group>"; };
-		7C08D5B92B2B127200929DF0 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 		7C08D5BC2B2B137900929DF0 /* Body14_Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body14_Label.swift; sourceTree = "<group>"; };
 		7C1317A02B2876120084405D /* Button_Header_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button_Header_Item.swift; sourceTree = "<group>"; };
 		7C1317A22B2876330084405D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -95,6 +93,8 @@
 		7CB25BA82AD7F6F9009035F5 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		7CB25BA92AD7F6F9009035F5 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		7CB25BAA2AD7F6F9009035F5 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		7CBC59E72B2B64AD00206280 /* DropDownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
+		7CBC59EA2B2B64BE00206280 /* RadioGroupingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioGroupingController.swift; sourceTree = "<group>"; };
 		7CC1E9D12AE89EBE00DA23AB /* register_name_vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = register_name_vc.swift; sourceTree = "<group>"; };
 		7CC1E9D32AE8A34100DA23AB /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		7CC1E9D52AE8ACF200DA23AB /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		7C08D5BB2B2B127900929DF0 /* Dropdown_TMB */ = {
 			isa = PBXGroup;
 			children = (
-				7C08D5B92B2B127200929DF0 /* DropDownView.swift */,
+				7CBC59E72B2B64AD00206280 /* DropDownMenu.swift */,
 			);
 			path = Dropdown_TMB;
 			sourceTree = "<group>";
@@ -218,8 +218,8 @@
 				7C05A4B12B27DE6100744471 /* Label_TMB */,
 				7C05A4AA2B27DD9C00744471 /* Header_TMB */,
 				7C08D5BB2B2B127900929DF0 /* Dropdown_TMB */,
+				7CBC59E92B2B64BE00206280 /* RadioGroup_TMB */,
 				7CB25B8F2AD7EA75009035F5 /* Main.storyboard */,
-				7C08D5B72B2933F300929DF0 /* RadioGroupingController.swift */,
 				7CB25B922AD7EA76009035F5 /* Assets.xcassets */,
 				7CB25B942AD7EA76009035F5 /* LaunchScreen.storyboard */,
 				7CB25B972AD7EA76009035F5 /* Info.plist */,
@@ -250,6 +250,14 @@
 				7CB25BAA2AD7F6F9009035F5 /* Pretendard-SemiBold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7CBC59E92B2B64BE00206280 /* RadioGroup_TMB */ = {
+			isa = PBXGroup;
+			children = (
+				7CBC59EA2B2B64BE00206280 /* RadioGroupingController.swift */,
+			);
+			path = RadioGroup_TMB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +353,6 @@
 				7C05A4AE2B27DDAF00744471 /* XibView.swift in Sources */,
 				7CC1E9D22AE89EBE00DA23AB /* register_name_vc.swift in Sources */,
 				7CB25B9E2AD7F6B8009035F5 /* label_ex.swift in Sources */,
-				7C08D5B82B2933F300929DF0 /* RadioGroupingController.swift in Sources */,
 				7CB25B8A2AD7EA75009035F5 /* AppDelegate.swift in Sources */,
 				7C05A4E02B28045E00744471 /* BodyMedium16_Label.swift in Sources */,
 				7C1317A32B2876330084405D /* Constants.swift in Sources */,
@@ -356,10 +363,11 @@
 				7C1317A12B2876120084405D /* Button_Header_Item.swift in Sources */,
 				7C05A4DE2B27FFB800744471 /* ChipsFilterLabel.swift in Sources */,
 				7C05A4B32B27DE7500744471 /* Label_TMB.swift in Sources */,
+				7CBC59E82B2B64AD00206280 /* DropDownMenu.swift in Sources */,
 				7C1317A52B28792B0084405D /* ChipsBasicOptionLabel.swift in Sources */,
 				7C05A4B52B27DEB600744471 /* Extensions.swift in Sources */,
-				7C08D5BA2B2B127200929DF0 /* DropDownView.swift in Sources */,
 				7CC1E9D62AE8ACF200DA23AB /* ViewController3.swift in Sources */,
+				7CBC59EB2B2B64BE00206280 /* RadioGroupingController.swift in Sources */,
 				7C05A4BB2B27E4C200744471 /* CellFeedSpectrum.swift in Sources */,
 				7C05A4C32B27F5BC00744471 /* Body16_Label.swift in Sources */,
 				7C05A4BF2B27E77C00744471 /* RoundBorderBox_TMB.swift in Sources */,
