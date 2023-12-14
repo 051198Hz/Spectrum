@@ -1,7 +1,7 @@
 import SnapKit
 import UIKit
 
-final class DropDownView: UIView {
+final class DropDownMenu: UIView {
     
     var isSeleted: Bool = false
     var screen: UIView!
