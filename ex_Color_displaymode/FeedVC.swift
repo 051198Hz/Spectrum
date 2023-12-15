@@ -44,6 +44,7 @@ class FeedVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bringSubviewToFront(headerBar)
         feedCollectionView.delegate = self
         feedCollectionView.dataSource = self
         registerNib()

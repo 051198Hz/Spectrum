@@ -4,18 +4,18 @@ import UIKit
 final class DropDownMenu: UIView {
     
     var isSeleted: Bool = false
-    var screen: UIView!
+//    var screen: UIView!
     var absolutFrame: CGRect!
     
     lazy var textView: RoundBorderBox_TMB = {
         
         //init에서 할당시 뷰 위계 버그 있음
-        absolutFrame = view.convert(view.bounds, to: screen)
+//        absolutFrame = view.convert(view.bounds, to: view)
         
-        let textView = RoundBorderBox_TMB(frame: CGRect(x: 0 , y: absolutFrame.maxY + 8, width: 84, height: 1))
+        let textView = RoundBorderBox_TMB(frame: CGRect(x: 0 , y: view.bounds.maxY + 8, width: 84, height: 1))
         
         //애니메이션 최초 실행시 좌측에서 날아오는 버그 방지 코드
-        textView.center.x = absolutFrame.midX
+        textView.center.x = view.bounds.midX
         
         textView.layer.cornerRadius = 8
         textView.backgroundColor = .white
@@ -46,7 +46,7 @@ final class DropDownMenu: UIView {
     
     init(frame: CGRect, screen: UIView){
         super.init(frame: frame)
-        self.screen = screen
+//        self.screen = screen
         setUI()
         setConstraints()
     }
@@ -59,6 +59,7 @@ final class DropDownMenu: UIView {
         addSubview(view)
         view.addSubview(titleText)
         view.addSubview(dropDownImage)
+//        view.addSubview(textView)
     }
     
     func setConstraints() {
@@ -73,15 +74,18 @@ final class DropDownMenu: UIView {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        alpha = 0.3
+        view.alpha = 0.3
+        textView.alpha = 1
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        alpha = 1.0
         
+        view.alpha = 1.0
+        textView.alpha = 1
+
         if !isSeleted{
-            if !textView.isDescendant(of: screen){
-                screen.addSubview(textView)
+            if !textView.isDescendant(of: view){
+                addSubview(textView)
             }
             
             textView.snp.updateConstraints({
@@ -93,7 +97,7 @@ final class DropDownMenu: UIView {
             
             view.backgroundColor = UIColor(named: Constants.Assetname.Colors.Background.bg2)
             
-            UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: screen!.layoutIfNeeded)
+            UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: layoutIfNeeded)
             
             isSeleted = true
             return
@@ -105,7 +109,7 @@ final class DropDownMenu: UIView {
             $0.height.equalTo(0)
         })
         
-        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: screen!.layoutIfNeeded)
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseInOut, animations: layoutIfNeeded)
         
         isSeleted = false
     }
